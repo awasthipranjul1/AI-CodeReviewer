@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 genai.configure(api_key="AIzaSyD93jv-nUCK30PGZNJgShG0xI0kYocz_AU")
 
-sys_prompt = """You are a AI python code reviewer"""
+sys_prompt = """You are a AI python code reviewer. If any user gives an incorrect code. Review his code give suggestions as well as fix code."""
 
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash",
                            system_instruction=sys_prompt)
