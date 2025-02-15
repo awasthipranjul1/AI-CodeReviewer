@@ -8,7 +8,7 @@ sys_prompt = """You are a AI python code reviewer"""
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash",
                            system_instruction=sys_prompt)
 
-st.title("GenAI App - AI Code Reviewer")
+st.title("GenAI App - AI Code python Reviewer")
 
 user_prompt = st.text_input("Enter your query:", placeholder="Type your query here...")
 
